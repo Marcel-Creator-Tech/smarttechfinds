@@ -84,8 +84,44 @@
       font-size:15px;
       margin-top:4px;
     }
+    .dropdown-list {
+  display: none;
+  margin-top: 14px;
+  padding: 14px 18px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 1px #eee;
+  list-style: disc;
+}
+
+.dropdown-list li {
+  margin-bottom: 10px;
+  margin-left: 18px;
+}
+
+.dropdown-list li:last-child {
+  margin-bottom: 0;
+}
+
+.dropdown-list a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.dropdown-list a:hover {
+  text-decoration: underline;
+}
+
   </style>
 </head>
+<script>
+  function toggleCases(event) {
+    event.preventDefault();
+    const list = event.target.nextElementSibling;
+    list.style.display = list.style.display === "block" ? "none" : "block";
+  }
+</script>
 
 <body>
 
@@ -149,29 +185,30 @@
   </p>
 
   <!-- Original Button Style -->
-  <button class="button" onclick="toggleList('cases')">
-    See budget phone cases →
-  </button>
+  <a class="button" href="#" onclick="toggleCases(event)">
+  See budget phone cases →
+</a>
+
 
   <!-- Dropdown Menu -->
-  <ul id="cases" class="dropdown-list">
-    <li>
-      <a href="https://amzn.to/3NQbqle" target="_blank" rel="nofollow noopener noreferrer">
-        Miracase Liquid Silicone Case — <strong>Best Overall ⭐</strong>
-      </a>
-    </li>
-    <li>
-      <a href="https://amzn.to/4rivTnu" target="_blank" rel="nofollow noopener noreferrer">
-        SUPFINE Magnetic Case — <strong>Best Budget</strong>
-      </a>
-    </li>
-    <li>
-      <a href="https://amzn.to/3MgYhS" target="_blank" rel="nofollow noopener noreferrer">
-        OtterBox Commuter Case — <strong>Best Protection</strong>
-      </a>
-    </li>
-  </ul>
-</div>
+ <ul class="dropdown-list">
+  <li>
+    <a href="https://amzn.to/3NQbqle" target="_blank" rel="nofollow noopener">
+      Miracase Liquid Silicone Case — <strong>Best Overall ⭐</strong>
+    </a>
+  </li>
+  <li>
+    <a href="https://amzn.to/4rivTnu" target="_blank" rel="nofollow noopener">
+      SUPFINE Magnetic Case — <strong>Best Budget</strong>
+    </a>
+  </li>
+  <li>
+    <a href="https://amzn.to/3MgYhS" target="_blank" rel="nofollow noopener">
+      OtterBox Commuter Case — <strong>Best Protection</strong>
+    </a>
+  </li>
+</ul>
+
 
 
   <div class="card">
