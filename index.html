@@ -30,12 +30,19 @@
     section { max-width:900px; margin:auto; padding:20px; }
 
     .card {
-      background:#fff;
-      padding:20px;
-      margin-bottom:25px;
-      border-radius:8px;
-      box-shadow:0 2px 6px rgba(0,0,0,.1);
-    }
+  background:#fff;
+  padding:20px;
+  margin-bottom:25px;
+  border-radius:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
 
     a.button {
       display:inline-block;
@@ -129,6 +136,7 @@
 
 </body>
 </html>
+
 
 
 
