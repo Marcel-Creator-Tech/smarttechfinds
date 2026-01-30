@@ -6,106 +6,171 @@
   <meta name="description" content="SmartTechFinds reviews the best tech accessories for college students. Honest recommendations for studying, dorm desks, and productivity in 2025.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Roboto font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
   <style>
-    body { font-family: Arial, sans-serif; margin:0; background:#f5f5f5; }
-
-    /* HEADER */
-    header { 
-      background:#111; 
-      color:#fff; 
-      padding:25px 20px; 
-      text-align:center; 
+    /* Base Styles */
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      background: #FFF8F0; /* warm minimal cream */
+      color: #333;
     }
-    header h1 { margin:0; font-size:32px; }
-    header p { margin-top:8px; font-size:16px; color:#ddd; }
 
-    /* NAV BAR */
-    nav { 
-      background:#222; 
-      text-align:center; 
-      padding:12px 0; 
+    /* Header */
+    header {
+      background-color: #4E4E4E; /* soft charcoal */
+      color: #FFF;
+      padding: 25px 20px;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 700;
     }
-    nav a { 
-      color:#fff; 
-      margin:0 15px; 
-      text-decoration:none; 
-      font-weight:bold; 
-      transition: color 0.2s; 
+
+    header p {
+      font-weight: 400;
+      font-size: 1rem;
+      margin-top: 6px;
+      color: #EEE;
     }
-    nav a:hover { color:#ff9900; }
 
-    /* SECTIONS */
-    section { max-width:900px; margin:auto; padding:20px; }
+    /* Navigation Menu */
+    nav {
+      background-color: #555; /* dark gray nav */
+      text-align: center;
+      padding: 12px 0;
+    }
 
-    /* CARDS */
+    nav a {
+      color: #FFF;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: #D9822B; /* copper accent hover */
+    }
+
+    /* Sections */
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* Cards */
     .card {
-      background:#fff;
-      padding:20px;
-      margin-bottom:25px;
-      border-radius:12px;
-      box-shadow:0 4px 12px rgba(0,0,0,.08);
+      background: #FFFFFF;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,.05);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
+
     .card:hover {
       transform: translateY(-4px);
-      box-shadow:0 8px 20px rgba(0,0,0,.12);
+      box-shadow: 0 8px 20px rgba(0,0,0,.08);
     }
 
-    /* HIGHLIGHT CARD */
     .card.highlight {
-      background:#fffbe6;
-      border-left:6px solid #ff8c00;
+      background: #FFF5E6; /* soft warm highlight */
+      border-left: 6px solid #D9822B; /* copper accent */
     }
 
-    /* BUTTONS */
+    .card h2 {
+      margin-top: 0;
+      font-weight: 500;
+      color: #4E4E4E;
+    }
+
+    .card p {
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    .card p.subtext {
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: 4px;
+    }
+
+    /* Buttons */
     a.button {
-      display:inline-block;
-      background:linear-gradient(135deg, #ffb347, #ff9900);
-      color:#000;
-      padding:14px 20px;
-      border-radius:999px;
-      text-decoration:none;
-      font-weight:bold;
-      margin-top:10px;
+      display: inline-block;
+      background: linear-gradient(135deg, #D9822B, #B56824);
+      color: #FFF;
+      padding: 14px 24px;
+      border-radius: 999px; /* pill shape */
+      text-decoration: none;
+      font-weight: 500;
+      margin-top: 12px;
       transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
+
     a.button:hover {
       transform: scale(1.05);
-      box-shadow:0 6px 15px rgba(255,153,0,.4);
+      box-shadow: 0 6px 15px rgba(217,130,43,.4);
     }
 
-    /* FOOTER */
-    footer { text-align:center; padding:20px; font-size:14px; color:#555; }
+    /* Back links */
+    a.back {
+      display: inline-block;
+      margin-bottom: 20px;
+      text-decoration: none;
+      color: #D9822B;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
 
-    /* SUBTEXT UNDER HEADINGS */
-    .card p.subtext { color:#666; font-size:15px; margin-top:4px; }
+    a.back:hover {
+      color: #B56824;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    /* Hero image */
+    .hero-img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 25px;
+    }
   </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
   <h1>SmartTechFinds</h1>
   <p>Honest tech recommendations for college students who want better study setups</p>
 </header>
 
-<!-- NAVIGATION -->
+<!-- Navigation Menu -->
 <nav>
   <a href="index.html">Home</a>
-  <a href="headphones.html"> Headphones</a>
-  <a href="phone-accessories.html"> Phone Accessories</a>
-  <a href="accessories.html"> Desk Accessories</a>
+  <a href="headphones.html">Headphones</a>
+  <a href="phone-accessories.html">Phone Accessories</a>
+  <a href="accessories.html">Desk Accessories</a>
 </nav>
 
-<!-- HERO IMAGE -->
+<!-- Hero Image -->
 <section>
   <img src="images/dorm-desk-setup.png" 
        alt="Dorm desk setup with tech accessories"
-       style="width:100%; border-radius:8px; margin-bottom:25px;">
+       class="hero-img">
 </section>
 
-<!-- INTRO HIGHLIGHT CARD -->
+<!-- Intro Highlight Card -->
 <section>
   <div class="card highlight">
     <h2>Built for College Students</h2>
@@ -121,45 +186,32 @@
   </div>
 </section>
 
-<!-- FEATURED GUIDE -->
-<section>
-  <div class="card highlight">
-    <h2>📌 Featured Guide: Dorm Desk Accessories</h2>
-    <p>Discover practical, affordable tech to make your dorm desk productive and organized.</p>
-    <a class="button" href="accessories.html">View Guide</a>
-  </div>
-</section>
-
-<!-- PRODUCTS -->
+<!-- Products Section -->
 <section>
   <div class="card">
     <h2>🎧 Best Headphones for Studying (2025)</h2>
     <p class="subtext">Quiet, comfortable options for libraries, dorms, and shared spaces</p>
     <p>
-      Finding the right Headphones can make a huge difference when studying in libraries,
-      dorms, or shared apartments. As a college student, I focused on earbuds with long battery life,
-      good noise isolation, and solid sound quality without breaking the bank.
+      Finding the right headphones can make a huge difference when studying in libraries,
+      dorms, or shared apartments. Focused on earbuds with long battery life, good noise isolation,
+      and solid sound quality without breaking the bank.
     </p>
-    <a class="button" href="headphones.html" target="_blank" rel="nofollow noopener noreferrer">
+    <a class="button" href="headphones.html" rel="nofollow noopener noreferrer">
       View recommended Headphones →
     </a>
   </div>
 
   <div class="card">
-  <h2>📱 Budget Phone Accessories for College Students</h2>
-  <p>
-    From long days on campus to late-night study sessions, the right phone accessories
-    can make your daily routine easier and less stressful. These budget-friendly picks
-    focus on reliability, convenience, and durability — without spending more than you need to.
-  </p>
-  <p>
-    Perfect for students who want practical upgrades that actually improve everyday college life.
-  </p>
-  <a class="button" href="phone-accessories.html">
-    View recommended phone accessories →
-  </a>
-</div>
-
+    <h2>📱 Budget Phone Accessories for College Students</h2>
+    <p>
+      From long days on campus to late-night study sessions, the right phone accessories
+      can make your daily routine easier and less stressful. These budget-friendly picks
+      focus on reliability, convenience, and durability — without spending more than you need to.
+    </p>
+    <a class="button" href="phone-accessories.html">
+      View recommended Phone Accessories →
+    </a>
+  </div>
 
   <div class="card">
     <h2>🧠 Must-Have Desk Accessories for College Students</h2>
@@ -169,12 +221,12 @@
       organization, and productivity — especially in small dorm rooms.
     </p>
     <a class="button" href="accessories.html">
-      View recommended desk accessories →
+      View recommended Desk Accessories →
     </a>
   </div>
 </section>
 
-<!-- CREDIBILITY / WHY TRUST -->
+<!-- Credibility Section -->
 <section>
   <div class="card highlight">
     <h2>Why Trust SmartTechFinds?</h2>
@@ -187,7 +239,7 @@
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- Footer -->
 <footer>
   <p>© 2026 SmartTechFinds</p>
   <p>As an Amazon Associate I earn from qualifying purchases.</p>
@@ -195,5 +247,3 @@
 
 </body>
 </html>
-
-
